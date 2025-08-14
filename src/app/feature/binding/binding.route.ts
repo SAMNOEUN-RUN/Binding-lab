@@ -1,4 +1,4 @@
-import { Route } from "@angular/router";
+import { Route } from "@angular/router"; //This is use for
 import { BindingComponent } from "./binding.component";
 
 export const bindingRoute: Route = {

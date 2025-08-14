@@ -17,4 +17,5 @@ export class BindingComponent {
   onClick() {
     alert('Button clicked!');
   }
+  
 }
