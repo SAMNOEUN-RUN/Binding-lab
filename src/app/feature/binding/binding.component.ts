@@ -14,8 +14,16 @@ export class BindingComponent {
   imageUrl = 'asset/name.jpg';
   username = '';
 
+  titles = 'Welcome';
+  imageUrls = 'asset/name.jpg';
+  name = 'Samnoeun';
+
   onClick() {
     alert('Button clicked!');
+  }
+
+  sayHello() {
+    alert(`Hello, ${this.name}!`);
   }
   
 }

@@ -1,15 +1,14 @@
-import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Component, signal } from '@angular/core';
+import { RouterModule, RouterOutlet } from '@angular/router';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 @Component({
-  selector: 'app-directive.component',
-  imports: [CommonModule],
+  selector: 'app-directive',
+  imports: [RouterModule, RouterOutlet, ReactiveFormsModule],
   templateUrl: './directive.component.html',
-  styleUrl: './directive.component.scss',
-  template: `Hello guide ho hfiugdugfjfgugd7f
-  <h1>
-  </h1>`
+  styleUrl: './directive.component.scss'
 })
 export class DirectiveComponent {
-  isLoggedIn: boolean = true;
+
 }

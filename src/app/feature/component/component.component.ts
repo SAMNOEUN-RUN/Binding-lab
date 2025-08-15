@@ -1,6 +1,11 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+export interface ComponentComponent {
+  message: string,
+  name: string
+}
+
 @Component({
   selector: 'app-component',
   standalone: true,
@@ -8,6 +13,15 @@ import { CommonModule } from '@angular/common';
   templateUrl: './component.component.html',
   styleUrls: ['./component.component.scss']
 })
+
 export class ComponentComponent {
-  message: string = 'Hello from Component!';
+  message = 'Component!';
+  name = 'Samnoeun';
+
+  changeName() {
+    this.name = "Component Testing";
+  }
+  resetName() {
+    this.name = "Samnoeun";
+  }
 }
