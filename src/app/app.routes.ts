@@ -54,6 +54,12 @@ export const routes: Routes = [
   },
 
   {
+    path: 'person-form',
+    loadComponent: () =>
+      import('./feature/person-form/person-form.component').then(m => m.PersonFormComponent),
+    title: 'Routing',
+  },
+  {
     path: 'routing',
     loadComponent: () =>
       import('./feature/routing/routing.component').then(m => m.RoutingComponent),
